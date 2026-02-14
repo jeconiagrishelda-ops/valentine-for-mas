@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Valentine 💖</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    max-width: 420px;
+}
+
+h1 {
+    color: #ff4b7d;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff4b7d;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff1e5a;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>Happy Valentine’s Day 💖</h1>
+    <p>
+        Happy Valentine’s Day, Mas.<br><br>
+        Not everything is meant to last,<br>
+        but some connections are meant to be appreciated.<br>
+        What we had was meaningful to me.<br>
+        I wish you happiness, always.<br><br>
+        — Jee 🤍
+    </p>
+
+    <button onclick="playMusic()">Play Our Song 🎵</button>
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="youre_the_reason.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function playMusic() {
+    document.getElementById("bgMusic").play();
+}
+</script>
+
+</body>
+</html>
